@@ -1,15 +1,9 @@
-version: "3"
+version: '3.9'
 
 services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: web
-    restart: always
-    volumes:
-      - ./:/app
-      - /app/node_modules
-      - /app/.next
+  nextapp:
+    container_name: nextapp
+    image: nextapp
+    build: .
     ports:
-      - 3004:3000
+      - "3000:3000"
