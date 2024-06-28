@@ -2,7 +2,7 @@
 
 import { NextResponse } from "next/server";
 import { SignJWT } from "jose";
-import { v4 as uuidv4 } from "uuid"; // Import UUID generator
+import { v4 as uuidv4 } from 'uuid';// Import UUID generator
 
 export async function POST(request) {
   const { name, email, phone } = await request.json();
