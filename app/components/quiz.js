@@ -43,7 +43,7 @@ export default function Quiz({ quizNumber,nextQuiz }) {
       timer = setInterval(() => {
         const elapsedTime = new Date().getTime() - startTime;
         setElapsedTime(elapsedTime);
-      }, 1);
+      }, 50);
     }
     return () => clearInterval(timer);
   }, [isQuizStarted, startTime]);
