@@ -45,7 +45,7 @@ export default function Register() {
         const data = await response.json();
         const userID = data.id;
         localStorage.setItem("userID", userID);
-        router.push("/quiz");
+             router.push("/quiz/1");
        
       } else {
         alert("Failed to register");
