@@ -121,7 +121,7 @@ export default function Quiz({ quizNumber,nextQuiz }) {
             />
             <h2
               className="text-3xl font-bold mt-6"
-              style={{ fontFamily: "Poppins" }}
+              style={{ fontFamily: "Poppins", color: "#19255B" }}
             >
               {title}
             </h2>
@@ -157,7 +157,7 @@ export default function Quiz({ quizNumber,nextQuiz }) {
           />
           <h2
             className="text-3xl font-bold mt-6 text-center"
-            style={{ fontFamily: "Poppins" }}
+            style={{ fontFamily: "Poppins", color: "#19255B" }}
           >
             {title}
           </h2>
