@@ -131,7 +131,7 @@ export default function Register() {
                 maxWidth: "300px",
               }}
             >
-              Suivant
+              Next
             </button>
           </div>
         </form>
