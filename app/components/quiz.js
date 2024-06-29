@@ -47,7 +47,13 @@ export default function Quiz({ quizNumber,nextQuiz }) {
     }
     return () => clearInterval(timer);
   }, [isQuizStarted, startTime]);
-
+  const formatTime = (time) => {
+    const date = new Date(time);
+    const minutes = date.getUTCMinutes().toString().padStart(2, "0");
+    const seconds = date.getUTCSeconds().toString().padStart(2, "0");
+    const milliseconds = date.getUTCMilliseconds().toString().padStart(3, "0");
+    return `${minutes}:${seconds}:${milliseconds}`;
+  };
   const startQuiz = () => {
     setStartTime(new Date().getTime());
     setIsQuizStarted(true);
@@ -212,9 +218,10 @@ export default function Quiz({ quizNumber,nextQuiz }) {
           </button>
         </div>
         <div className="mt-4 text-center text-gray-600">
-          Elapsed Time: {Math.floor(elapsedTime / 1000)} seconds
+          Elapsed Time: {formatTime(elapsedTime)}
         </div>
       </div>
     </div>
   );
+
 }
