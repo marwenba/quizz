@@ -79,6 +79,7 @@ export default function Register() {
             </label>
             <input
               type="text"
+              style={{color: "#19255B" }}
               className="w-full px-4 py-2 border rounded"
               placeholder="Veuillez saisir votre nom et prénom"
               value={name}
@@ -98,6 +99,7 @@ export default function Register() {
               type="email"
               className="w-full px-4 py-2 border rounded"
               placeholder="Veuillez saisir adresse E-mail"
+              style={{color: "#19255B" }}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -114,6 +116,7 @@ export default function Register() {
             <input
               type="tel"
               className="w-full px-4 py-2 border rounded"
+              style={{color: "#19255B" }}
               placeholder="Veuillez saisir téléphone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
