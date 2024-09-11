@@ -24,17 +24,17 @@ export default function Congrats() {
           />
           <h2
             className="text-3xl font-bold mt-6 text-center"
-            style={{ fontFamily: "Poppins" }}
+            style={{ fontFamily: "Poppins", color: "#19255B" }}
           >
             AI Developer Training Quiz
           </h2>
         </div>
 
         <div className="flex justify-center">
-          <h2>Thank you for your participation !</h2>
+          <h2 style={{ fontFamily: "Poppins", color: "#19255B" }}>Thank you for your participation !</h2>
         </div>
       </div>
-    
+
     </div>
   );
 }
